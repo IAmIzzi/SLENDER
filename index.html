@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background: white;
+    border-radius: 60% 60% 70% 70%; 
+    box-shadow: inset 0 0 20px black;
+    z-index: 2;
+}
+
+.neck{
+    position: absolute;
+    width: 80px;
+    height: 110px;
+    top: 170px;
+    background: white;
+    box-shadow: inset 0 0 30px black;
+    z-index: 1;
+}
+
+.body {
+    position: absolute;
+    top: 230px;
+    left: 244px;
+      border-top: 400px solid black;
+      border-left: 120px solid transparent;
+      border-right: 120px solid transparent;
+      height: 0;
+      width: 100px;
+    }
+
+    .waist{
+        position: absolute;
+        top: 500px;
+        left: 334px;
+        background: black;
+        width: 160px;
+        height: 140px;
+    }
+
+    .leg-left{
+        position: absolute;
+        top: 600px;
+        left: 334px;
+        background: black;
+        width: 70px;
+        height: 140px;
+    }
+
+    .leg-right{
+        position: absolute;
+        top: 600px;
+        left: 424px;
+        background: black;
+        width: 70px;
+        height: 140px;
+    }
+    
+.collar-left {
+    position: absolute;
+    top: -400px;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid white;
+    border-right: 50px solid transparent;
+     z-index: 1;
+    }
+  
+    .collar-right{
+    position: absolute;
+    top: -400px;
+    left: 33px;
+      width: 0;
+      height: 0;
+      border-bottom: 50px solid white;
+      border-left: 50px solid transparent;
+     z-index: 1;
+    }
+
+.tie{
+    position: absolute;
+    top: -350px;
+    left: -2px;
+      width: 0;
+      height: 0;
+      border-left: 43px solid transparent;
+      border-right: 43px solid transparent;
+      border-top: 60px solid black;
+      z-index: 1;
+    }
+
+.shirt{
+    position: absolute;
+    top: -350px;
+    left: -1px;
+    width: 85px;
+    height: 100px; 
+    background: white;
+
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="head"></div>
+    <div class="neck"></div>
+    <div class="body">
+        <div class="collar-left"></div>
+        <div class="collar-right"></div>
+        <div class="tie"></div>
+        <div class="shirt"></div>
+    </div>
+    <div class="waist"></div>
+    <div class="leg-left"></div>
+    <div class="leg-right"></div>
+    
+</body>
+</html>
